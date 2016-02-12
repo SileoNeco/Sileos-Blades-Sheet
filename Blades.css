@@ -1,0 +1,92 @@
+select {
+    width:auto;
+}
+
+/* Left Column of the sheet */
+
+.sheet-leftcol {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:300px;
+    height:1000px;
+    padding:2px;
+}
+
+/* Center Column of the sheet */
+
+.sheet-centercol {
+    position:absolute;
+    left:300px;
+    top:0px;
+    width:340px;
+    height:800px;
+    padding:2px;
+}
+
+/* Right Column of the Sheet */
+
+.sheet-rightcol {
+    position:absolute;
+    left:640px;
+    top:0px;
+    width:225px;
+    height:800px;
+    padding:2px;
+}
+
+/* Bottom Right panel of the sheet */
+
+.sheet-bot {
+    position:absolute;
+    left:200px;
+    top:1405px;
+    width:635px;
+    height:200px;
+    padding:2px;
+}
+
+/* TABBED SHEET INFO
+
+style stuff */
+.sheet-tabs {
+    list-style-type:none;
+    padding:0;
+    margin:0;
+    position:relative;
+}
+
+.sheet-tabs li {
+    float:left;
+}
+
+.sheet-tabs li > input {
+    display:none;
+}
+
+.sheet-tabs li > label {
+    display:inline-block;
+    padding:5px 15px;
+    width:auto;
+}
+
+.sheet-tabs .sheet-tab-content {
+    display:none;
+    position:absolute;
+    left:0;
+}
+
+/* functional stuff*/
+.sheet-tabs li > input:checked + label {
+    background-color:#ddd;
+}
+
+input:checked + .sheet-tabs li > input:not(:checked) + label {
+    display:none;
+}
+
+.sheet-tabs li > input:checked ~ .sheet-tab-content {
+    position:absolute;
+    top:70px;
+    display:block;
+}

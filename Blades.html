@@ -1,0 +1,1070 @@
+<div style='position:relative;padding:0px;'>
+    <div class='leftcol'>
+        <h1>Blades in the Dark</h1>
+        <input type='text' name='attr_name' style='width:150px;' />
+        <input type='text' name='attr_alias' style='width:125px;' /><br />
+        <label style='display:inline-block;width:167px'>Name</label>
+        <label style='display:inline;'>Alias</label><br />
+        <input type='text' name='attr_look' style='width:275px;' /><br />
+        <label>Look</label>
+        <select name='attr_heritageloc'>
+            <option selected></option>
+            <option>Akoros</option>
+            <option>The Dagger Islands</option>
+            <option>Iruvia</option>
+            <option>Severos</option>
+            <option>Skovlan</option>
+            <option>Tycheros</option>
+        </select>
+        <input type='text' name='attr_heritagedesc' style='width:125px' /><br />
+        <label>Heritage</label>
+        <select name='attr_bgtyle'>
+            <option selected></option>
+            <option>Academic</option>
+            <option>Labor</option>
+            <option>Law</option>
+            <option>Trade</option>
+            <option>Military</option>
+            <option>Noble</option>
+            <option>Underworld</option>
+        </select>
+        <input type='text' name='attr_bgdesc' style='width:175px' /><br />
+        <label>Background</label>
+        <select name='attr_vicetype'>
+            <option selected></option>
+            <option>Faith</option>
+            <option>Gambling</option>
+            <option>Luxury</option>
+            <option>Obligation</option>
+            <option>Pleasure</option>
+            <option>Stupor</option>
+            <option>Weird</option>
+        </select>
+        <input type='text' name='attr_vicedesc' style='width:180px' /><br />
+        <label>Vice</label>
+        <input type='text' name='attr_purveyor' style='width:278px' /><br />
+        <label>Purveyor</label><br />
+        <label style='width:165px;display:inline-block'>Stress</label><label style='display:inline'>Trauma</label><br />
+        <label for='stress0' style='display:inline'> </label>
+        <input type='radio' name='attr_stress' value=0 id='stress0' style='display:none' checked />
+        <input type='radio' name='attr_stress' value=1 />
+        <input type='radio' name='attr_stress' value=2 />
+        <input type='radio' name='attr_stress' value=3 />
+        <input type='radio' name='attr_stress' value=4 />
+        <input type='radio' name='attr_stress' value=5 />
+        <input type='radio' name='attr_stress' value=6 />
+        <input type='radio' name='attr_stress' value=7 />
+        <input type='radio' name='attr_stress' value=8 />
+        <input type='radio' name='attr_stress' value=9 />
+        <label for='trauma0' style='display:inline'> </label>
+        <input type='radio' name='attr_trauma' value=0 id='trauma0' style='display:none' checked />
+        <input type='radio' name='attr_trauma' value=1 />
+        <input type='radio' name='attr_trauma' value=2 />
+        <input type='radio' name='attr_trauma' value=3 />
+        <input type='radio' name='attr_trauma' value=4 /><br />
+        <input type='checkbox' name='attr_cold'>Cold</input>
+        <input type='checkbox' name='attr_haunted'>Haunted</input>
+        <input type='checkbox' name='attr_obsessed'>Obsessed</input>
+        <input type='checkbox' name='attr_paranoid'>Paranoid</input><br />
+        <input type='checkbox' name='attr_reckless'>Reckless</input>
+        <input type='checkbox' name='attr_soft'>Soft</input>
+        <input type='checkbox' name='attr_unstable'>Unstable</input>
+        <input type='checkbox' name='attr_vicious'>Vicious</input><br /><br />
+        <label>Harm</label>
+        3 <input type='text' name='attr_harm3' style='width:210px;' />Need Help<br />
+        2 <input type='text' name='attr_harm21' style='width:105px;' /><input type='text' name='attr_harm22' style='width:105px;' />-1D<br />
+        1 <input type='text' name='attr_harm11' style='width:105px;' /><input type='text' name='attr_harm12' style='width:105px;' />Less Effect<br />
+        <b>Recovery</b> <i>Get treatment during downtime to activate your healing project clock</i><br />
+        <label for='recovery0' style='display:inline'> </label>
+        <input type='radio' name='attr_recovery' value=0 id='recovery0' style='display:none' checked />
+        <input type='radio' name='attr_recovery' value=1 />
+        <input type='radio' name='attr_recovery' value=2 />
+        <input type='radio' name='attr_recovery' value=3 />
+        <input type='radio' name='attr_recovery' value=4 />
+        <input type='radio' name='attr_recovery' value=5 />
+        <input type='radio' name='attr_recovery' value=6 />
+        <input type='radio' name='attr_recovery' value=7 />
+        <input type='radio' name='attr_recovery' value=8 /><br /><br />
+        <input type='checkbox' name='attr_armor'><b>Armor</b></input>
+        <input type='checkbox' name='attr_heavy'><b>+Heavy</b></input><br />
+        Other Special Armours<br />
+        <input type='text' name='attr_specarmname1' />
+        <input type='checkbox' name='attr_specarm1' /><br />
+        <input type='text' name='attr_specarmname2' />
+        <input type='checkbox' name='attr_specarm2' /><br />
+        Coin <input type='radio' name='attr_coin' value=0 id='coin0' style='display:none' checked />
+        <label style='display:inline' for='coin0'> </label>
+        <input type='radio' name='attr_coin' value=1 />
+        <input type='radio' name='attr_coin' value=2 />
+        <input type='radio' name='attr_coin' value=3 />
+        <input type='radio' name='attr_coin' value=4 /><br />
+        Stash <input type='number' name='attr_stash' value=0 min=0 /><br />
+        Notes/Projects<br />
+        <textarea name='attr_notes' style='width:270px;height:200px;'></textarea>
+    </div>
+    <div class='centercol'>
+        <input type='checkbox' name='attr_classlock'>lock</input>
+        <ul class='tabs'>
+            <li>
+                <input type='radio' name='attr_playbook' id='tab-cutter' value='Cutter' checked />
+                <label for='tab-cutter'>Cutter</label>
+                <div class='tab-content'>
+                    A dangerous and intimidating fighter
+                    <h4>Special Abilities</h4>
+                    <input type='checkbox' name='attr_brutal'><b>Brutal:</b> Your
+                    attacks are more powerful; you hit as if wielding a heavier
+                    weapon. You gain <b>potency</b> vs. physical targets.</input>
+                    <br />
+                    <input type='checkbox' name='attr_resilient'><b>Resilient:</b>
+                    When you have <b>downtime</b>, mark <b>+2 segments</b> on your
+                    healing clock.</input><br />
+                    <input type='checkbox' name='attr_toughasnails'><b>Tough as
+                    Nails:</b> When you resist with <b>Prowess</b>, you get
+                    <b>+1d</b>.</input><br />
+                    <input type='checkbox' name='attr_savage'><b>Savage:</b> When
+                    you unleash physical violence, it's especially frightening.
+                    When you <b>Command</b> a frightened target, take <b>+1d</b>.
+                    </input><br />
+                    <input type='checkbox' name='attr_ghostfighter'><b>Ghost
+                    Fighter:</b> You may imbue your hands, melee weapons, or tools
+                    with spirit energy. You gain <b>potency</b> in combat vs. the
+                    supernatural.</input><br />
+                    <input type='checkbox' name='attr_notrifle'><b>Not to be Trifled
+                    With:</b> In close combat, you are equal in <b>scale</b> to
+                    a small gang.</input><br />
+                    <input type='checkbox' name='attr_leader'><b>Leader:</b> When
+                    you <b>Command</b> a <b>gang</b> in combat, they continue to
+                    fight when they would otherwise <b>break</b> (they're not taken
+                    out when they suffer level 3 harm). They gain <b>potency</b>
+                    and <b>1 armor</b>.</input><br />
+                    <input type='checkbox' name='attr_battleborn'><b>Battleborn:</b>
+                    You get <b>special armor</b> against physical attacks in combat.
+                    When you roll a <b>critical</b> in combat, <b>clear 1 stress.</b>
+                    </input><br />
+                    <input type='checkbox' name='attr_cuttervet1'><b>Veteran:</b>
+                    Choose a special ability from another source.</input><br />
+                    <textarea name='attr_cuttervetdesc1' style='width:95%;height:42px'></textarea><br />
+                    <input type='checkbox' name='attr_cuttervet2'>
+                    <textarea name='attr_cuttervetdesc2' style='width:91%;height:42px'></textarea><br />
+                    <input type='checkbox' name='attr_cuttervet3'>
+                    <textarea name='attr_cuttervetdesc3' style='width:91%;height:42px'></textarea><br />
+                    <div style='width:50%;display:inline-block;'>
+                        <h4>Dangerous Friends</h4>
+                        <div style='display:inline-block;width:18px;'>^</div>v<br />
+                        <input type='checkbox' name='attr_marlaneally' />
+                        <input type='checkbox' name='attr_marlaneenemy' /> Marlane,
+                        a pugilist<br />
+                        <input type='checkbox' name='attr_chaelally' />
+                        <input type='checkbox' name='attr_chaelenemy' /> Chael,
+                        a vicious thug<br />
+                        <input type='checkbox' name='attr_mercyally' />
+                        <input type='checkbox' name='attr_mercyenemy' /> Mercy,
+                        a cold killer<br />
+                        <input type='checkbox' name='attr_graceally' />
+                        <input type='checkbox' name='attr_graceenemy' /> Grace,
+                        an extortionist<br />
+                        <input type='checkbox' name='attr_strasally' />
+                        <input type='checkbox' name='attr_strasenemy' /> Stras,
+                        a clever blade<br /><br /><br />
+                    </div>
+                    <div style='width:50%;display:inline;float:right'>
+                        <h4>Items</h4> <i>(Italics don't count for load)</i><br />
+                        <input type='checkbox' name='attr_finehandweap' /> <b>Fine
+                        hand weapon</b><br />
+                        <input type='checkbox' name='attr_fineheavyweap1' />-<input type='checkbox' name='attr_fineheavyweap2' />
+                        <b>Fine Heavy Weapon</b><br />
+                        <input type='checkbox' name='attr_manacles' /> <i>Manacles
+                        & chain</i><br />
+                        <input type='checkbox' name='attr_rageess' /> <i>Rage
+                        essence vial</i><br />
+                        <input type='checkbox' name='attr_cutspiritbane' />
+                        <i>Spiritbane charm</i><br />
+                        <input type='checkbox' name='attr_demotools1' />-<input type='checkbox' name='attr_demotools2' />
+                        Demolition tools
+                    </div><br />
+                    <b>Mark XP:</b>
+                    <input type='checkbox' name='attr_cutadvance1' />
+                    <input type='checkbox' name='attr_cutadvance2' />
+                    <input type='checkbox' name='attr_cutadvance3' />
+                    <input type='checkbox' name='attr_cutadvance4' />
+                    <input type='checkbox' name='attr_cutadvance5' />
+                    <input type='checkbox' name='attr_cutadvance6' />
+                    <input type='checkbox' name='attr_cutadvance7' />
+                    <input type='checkbox' name='attr_cutadvance8' /><br />
+                    <ul>
+                        <li><i>When you roll a desperate action.</i></li>
+                        <li><i>When you address a tough challenge with violence
+                        or threats.</i></li>
+                        <li><i>At end of session, if you've expressed your beliefs,
+                        drives, heritage, or background. And also mark xp if you
+                        struggled with issues from your vice or traumas during the
+                        session.</i></li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <input type='radio' name='attr_playbook' id='tab-hound' value='hound' />
+                <label for='tab-hound'>Hound</label>
+                <div class='tab-content'>
+                    A deadly marksman and tracker
+                    <h4>Special Abilities</h4>
+                    <input type='checkbox' name='attr_sharpshooter'><b>Sharpshooter:</b>
+                    You can perform precision shooting from extreme long range.
+                    You can quickly draw and reload your weapons. Your ranged attacks
+                    gain <b>potency</b>.</input><br />
+                    <input type='checkbox' name='attr_tenacious'><b>Tenacious:</b>
+                    Penalties from harm are one level less severe (though level 4
+                    harm is still fatal).</input><br />
+                    <input type='checkbox' name='attr_ghosthunter1' /><input type='checkbox' name='attr_ghosthunter2'>
+                    <b>Ghost Hunter:</b> Your hunting pet is imbued with spirit
+                    energy. It gains <b>potency</b> when tracking or fighting the
+                    supernatural, and gains an arcane ability: <i>ghost-form</i>,
+                    <i>mind-link</b>, or <i>arrow-swift</i>. Take this ability again
+                    to choose an additional arcane ability for your pet.</input><br />
+                    <input type='checkbox' name='attr_sharp'><b>Sharp:</b> When
+                    you roll resistance with <b>Insight</b>, you get <b>+1d.</b></input><br />
+                    <input type='checkbox' name='attr_markedtarget'><b>Marked Target:</b>
+                    When you <b>hunt</b> a target that you've previously tracked
+                    or wounded, you get <b>+1 effect</b> level.</input><br />
+                    <input type='checkbox' name='attr_vengeful'><b>Vengeful:</b>
+                    After you face a consequence from an enemy (suffered or resisted),
+                    you get <b>+1d</b> to your next roll against that enemy.</input><br />
+                    <input type='checkbox' name='attr_focused'><b>Focused:</b> You
+                    get <b>special armor</b> vs. mental effects (fear, confusion,
+                    etc.). When you roll a <b>critical</b> while engaging a target,
+                    <b>clear 1 stress</b></input><br />
+                    <input type='checkbox' name='attr_houndvet1'><b>Veteran:</b>
+                    Choose a special ability from another source.</input><br />
+                    <textarea name='attr_houndvetdesc1' style='width:95%;height:42px'></textarea><br />
+                    <input type='checkbox' name='attr_houndvet2'>
+                    <textarea name='attr_houndvetdesc2' style='width:91%;height:42px'></textarea><br />
+                    <input type='checkbox' name='attr_houndvet3'>
+                    <textarea name='attr_houndvetdesc3' style='width:91%;height:42px'></textarea><br />
+                    <div style='width:50%;display:inline-block;'>
+                        <h4>Dangerous Friends</h4>
+                        <div style='display:inline-block;width:18px;'>^</div>v<br />
+                        <input type='checkbox' name='attr_steinerally' />
+                        <input type='checkbox' name='attr_steinerenemy' /> Steiner, an assassin<br />
+                        <input type='checkbox' name='attr_celeneally' />
+                        <input type='checkbox' name='attr_celeneenemy' /> Celene, a sentinal<br />
+                        <input type='checkbox' name='attr_melvirally' />
+                        <input type='checkbox' name='attr_melvirenemy' /> Melvier, a physicker<br />
+                        <input type='checkbox' name='attr_velerisally' />
+                        <input type='checkbox' name='attr_velerisenemy' /> Veleris, a spy<br />
+                        <input type='checkbox' name='attr_castaally' />
+                        <input type='checkbox' name='attr_castaenemy' /> Casta, a bounty hunter<br /><br /><br />
+                    </div>
+                    <div style='width:50%;display:inline;float:right'>
+                        <h4>Items</h4> <i>(Italics don't count for load)</i><br />
+                        <input type='checkbox' name='attr_finepairpistols' /> <b>Fine pair of pistols</b><br />
+                        <input type='checkbox' name='attr_finelongrifle1' />-<input type='checkbox' name='attr_finelongrifle2' />
+                        <b>Fine long rifle</b><br />
+                        <input type='checkbox' name='attr_electroplasmicammo' /> Electroplasmic ammunition<br />
+                        <input type='checkbox' name='attr_finetrainedhungtingpet' /> <b><i>A fine trained hunting pet</i></b><br />
+                        <input type='checkbox' name='attr_spyglass' /> Spyglass<br />
+                        <input type='checkbox' name='attr_houndspiritcharm' /> <i>Spiritbane charm</i>
+                    </div><br />
+                    <b>Mark XP:</b>
+                    <input type='checkbox' name='attr_houndadvance1' />
+                    <input type='checkbox' name='attr_houndadvance2' />
+                    <input type='checkbox' name='attr_houndadvance3' />
+                    <input type='checkbox' name='attr_houndadvance4' />
+                    <input type='checkbox' name='attr_houndadvance5' />
+                    <input type='checkbox' name='attr_houndadvance6' />
+                    <input type='checkbox' name='attr_houndadvance7' />
+                    <input type='checkbox' name='attr_houndadvance8' /><br />
+                    <ul>
+                        <li><i>When you roll a desperate action.</i></li>
+                        <li><i>When you address a tough challenge with violence or tracking.</i></li>
+                        <li><i>At end of session, if you've expressed your beliefs,
+                        drives, heritage, or background. And also mark xp if you struggled with issues from your vice or traumas during the session.</i></li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <input type='radio' name='attr_playbook' id='tab-leech' value='leech' />
+                <label for='tab-leech'>Leech</label>
+                <div class='tab-content'>
+                    A saboteur and tinkerer
+                    <h4>Special Abilities</h4>
+                    <input type='checkbox' name='attr_alchemist'><b>Alchemist:</b>
+                    You can <b>tinker</b> with chemicals and arcane substances to
+                    design and produce poisons, drugs, and other strange mixtures.</input><br />
+                    <input type='checkbox' name='attr_artificer'><b>Artificer:</b>
+                    When you <b>tinker</b> with a device, tool, or weapon, you may
+                    include alchemical or clockwork features.</input><br />
+                    <input type='checkbox' name='attr_analyst'><b>Analyst:</b> When
+                    you take extra time and care to <b>gather information</b> during
+                    downtime, you get <b>potency</b>.</input><br />
+                    <input type='checkbox' name='attr_saboteur'><b>Saboteur:</b>
+                    When you <b>wreck</b>, the work is much quieter than it should
+                    be and the damage is hidden from casual inspection.</input><br />
+                    <input type='checkbox' name='attr_ghostward'><b>Ghost Ward:</b>
+                    You know how to <b>wreck</b> an area with arcane substances
+                    and methods so it is either anathema or enticing to spirits
+                    (your choice).</input><br />
+                    <input type='checkbox' name='attr_venomous'><b>Venomous:</b>
+                    Choose a drug or poison to which you are immune. Take <b>1 
+                    stress</b> to secrete it through your skin or saliva or exhale
+                    it as a vapor.</input><br />
+                    <input type='checkbox' name='attr_physicker'><b>Physicker:</b>
+                    You can <b>tinker</b> with bones, blood, and bodily humours
+                    to treat wounds, stabilize the dying, or <b>study</b> a malady
+                    or corpse. Also, your crew gets <b>+1d</b> to <b>long-term project
+                    healing</b> rolls.</input><br />
+                    <input type='checkbox' name='attr_fortitude'><b>Fortitude:</b>
+                    You get <b>special armor</b> vs. fatigue, weakness, and chemical
+                    effects. When you roll a <b>crit</b> while tinkering, <b>clear
+                    1 stress</b>.</input><br />
+                    <input type='checkbox' name='attr_leechvet1'><b>Veteran:</b>
+                    Choose a special ability from another source.</input><br />
+                    <textarea name='attr_leechvetdesc1' style='width:95%;height:42px'></textarea><br />
+                    <input type='checkbox' name='attr_leechvet2'>
+                    <textarea name='attr_leechvetdesc2' style='width:91%;height:42px'></textarea><br />
+                    <input type='checkbox' name='attr_leechvet3'>
+                    <textarea name='attr_leechvetdesc3' style='width:91%;height:42px'></textarea><br />
+                    <div style='width:50%;display:inline-block;'>
+                        <h4>Dangerous Friends</h4>
+                        <div style='display:inline-block;width:18px;'>^</div>v<br />
+                        <input type='checkbox' name='attr_staziaally' />
+                        <input type='checkbox' name='attr_staziaenemy' /> Stazia, an apothecary<br />
+                        <input type='checkbox' name='attr_veldrenally' />
+                        <input type='checkbox' name='attr_veldrenenemy' /> Veldren, a psychonaut<br />
+                        <input type='checkbox' name='attr_eckerdally' />
+                        <input type='checkbox' name='attr_eckerdenemy' /> Eckerd, a corpse theif<br />
+                        <input type='checkbox' name='attr_julally' />
+                        <input type='checkbox' name='attr_julenemy' /> Jul, a blood dealer<br />
+                        <input type='checkbox' name='attr_malistaally' />
+                        <input type='checkbox' name='attr_malistaenemy' /> Malista, a priestess<br /><br /><br />
+                    </div>
+                    <div style='width:50%;display:inline;float:right'>
+                        <h4>Items</h4> <i>(Italics don't count for load)</i><br />
+                        <input type='checkbox' name='attr_finetinker' /> <b>Fine tinkering tools</b><br />
+                        <input type='checkbox' name='attr_finewreck' /> <b>Fine wrecker tools</b><br />
+                        <input type='checkbox' name='attr_blowgun' /> <i>Blowgun & darts, syringes</i><br />
+                        <input type='checkbox' name='attr_bandolier1' /> Bandolier of alchemical vials (4)<br />
+                        <input type='checkbox' name='attr_bandolier2' /> Bandolier of alchemical vials (4)<br />
+                        <input type='checkbox' name='attr_gadget1' />
+                        <input type='checkbox' name='attr_gadget2' />
+                        <input type='checkbox' name='attr_gadget3' /> Gadgets<br />
+                    </div><br /><br /><br />
+                    <b>Mark XP:</b>
+                    <input type='checkbox' name='attr_leechadvance1' />
+                    <input type='checkbox' name='attr_leechadvance2' />
+                    <input type='checkbox' name='attr_leechadvance3' />
+                    <input type='checkbox' name='attr_leechadvance4' />
+                    <input type='checkbox' name='attr_leechadvance5' />
+                    <input type='checkbox' name='attr_leechadvance6' />
+                    <input type='checkbox' name='attr_leechadvance7' />
+                    <input type='checkbox' name='attr_leechadvance8' /><br />
+                    <ul>
+                        <li><i>When you roll a desperate action.<br /></i></li>
+                        <li><i>When you address a tough challenge with technical skill or chaos.<br /></i></li>
+                        <li><i>At end of session, if you've expressed your beliefs,
+                        drives, heritage, or background. And also mark xp if you struggled with issues from your vice or traumas during the session.<br /></i></li>
+                    </ul>
+                    <div style='position:absolute;left:-300px;top:1025px;width:125px'>
+                        <h4>Alchemicals</h4>
+                        Bandolier <input type='checkbox' name='attr_vial11'>-<input type='checkbox' name='attr_vial12'>-<input type='checkbox' name='attr_vial13'>-<input type='checkbox' name='attr_vial14'><br />
+                        Bandolier <input type='checkbox' name='attr_vial21'>-<input type='checkbox' name='attr_vial22'>-<input type='checkbox' name='attr_vial23'>-<input type='checkbox' name='attr_vial24'><br /><br />
+                        <b>Drugs</b><br />
+                        <ul>
+                            <li>
+                                Trance Powder
+                            </li><br />
+                            <li>
+                                Quicksilver
+                            </li><br />
+                            <li>
+                                Bloodneedle
+                            </li><br />
+                            <li>
+                                Spark
+                            </li><br />
+                            <li>
+                                Dream Smoke
+                            </li><br />
+                            <li>
+                                Black Lotus
+                            </li><br />
+                        </ul><br />
+                        <b>Essences</b><br />
+                        <ul>
+                            <li>
+                                Dream
+                            </li><br />
+                            <li>
+                                Death
+                            </li><br />
+                            <li>
+                                Life
+                            </li><br />
+                            <li>
+                                Rage
+                            </li><br />
+                            <li>
+                                Shadow
+                            </li><br />
+                            <li>
+                                Thought
+                            </li><br />
+                        </ul><br />
+                        <b>Oils</b><br />
+                        <ul>
+                            <li>
+                                Blinding
+                            </li><br />
+                            <li>
+                                Ghost
+                            </li><br />
+                            <li>
+                                Lightning
+                            </li><br />
+                            <li>
+                                Fire
+                            </li><br />
+                            <li>
+                                Drift
+                            </li><br />
+                            <li>
+                                Silence
+                            </li><br />
+                        </ul><br />
+                        <b>Poisons</b><br />
+                        <ul>
+                            <li>
+                                Devilroot
+                            </li><br />
+                            <li>
+                                Chokedust
+                            </li><br />
+                            <li>
+                                Eyeblind
+                            </li><br />
+                            <li>
+                                Standstill
+                            </li><br />
+                            <li>
+                                Skullfire
+                            </li><br />
+                            <li>
+                                Heartcalm
+                            </li><br />
+                        </ul><br />
+                        <b>Potions</b><br />
+                        <ul>
+                            <li>
+                                Spider
+                            </li><br />
+                            <li>
+                                Sight
+                            </li><br />
+                            <li>
+                                Ironskin
+                            </li><br />
+                            <li>
+                                Bull
+                            </li><br />
+                            <li>
+                                Viper
+                            </li><br />
+                            <li>
+                                Vitality
+                            </li><br />
+                        </ul>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <input type='radio' name='attr_playbook' id='tab-lurk' value='lurk' />
+                <label for='tab-lurk'>Lurk</label>
+                <div class='tab-content'>
+                    A stealthy infiltrator and burglar
+                    <h4>Special Abilities</h4>
+                    <input type='checkbox' name='attr_infiltrator'><b>Infiltrator:</b>
+                    When you bypass security, you get <b>+1 effect</b> level.</input><br />
+                    <input type='checkbox' name='attr_ambush'><b>Ambush:</b>When
+                    you attack from hiding or spring a trap, you get <b>+1d</b>.</input><br />
+                    <input type='checkbox' name='attr_expertise'><b>Expertise:</b>
+                    When you lead a <b>group action</b> using your best action-rating,
+                    you can suffer only 1 stress at most from any failed rolls.</input><br />
+                    <input type='checkbox' name='attr_flyonthewall'><b>Fly on the 
+                    Wall:</b> When you <b>gather information</b> through clandestine
+                    observation, you get <b>+1 effect</b> level.</input><br />
+                    <input type='checkbox' name='attr_ghostveil'><b>Ghost Veil:</b>
+                    You may shift partially into the ghost field, becoming shadowy
+                    and insubstantial for a moment. Take 1 stress when you shift,
+                    plus 1 stress for each extra feature: <i>It lasts for a few
+                    minutes rather than a moment—you are invisible rather than
+                    shadowy</i>—<i>you may float through the air like a ghost</i>—<i>you
+                    may pass through solid objects</i>.</input><br />
+                    <input type='checkbox' name='attr_daredevil'><b>Daredevil:</b>
+                    When you make a <b>desperate</b> roll, you get <b>+1d</b>.</input><br />
+                    <input type='checkbox' name='attr_reflexes'><b>Reflexes:</b>
+                    When there's a question about who acts first, the answer is
+                    you (two characters with Reflexes act simultaneously).</input><br />
+                    <input type='checkbox' name='attr_shadow'><b>Shadow:</b>You get <b>special armor</b> vs. consequences from detection or security. When you roll a <b>critical</b> on a feat of athletics or stealth, <b>clear 1 stress</b>.</input><br />
+                    <input type='checkbox' name='attr_lurkvet1'><b>Veteran:</b>
+                    Choose a special ability from another source.</input><br />
+                    <textarea name='attr_lurkvetdesc1' style='width:95%;height:42px'></textarea><br />
+                    <input type='checkbox' name='attr_lurkvet2'>
+                    <textarea name='attr_lurkvetdesc2' style='width:91%;height:42px'></textarea><br />
+                    <input type='checkbox' name='attr_lurkvet3'>
+                    <textarea name='attr_lurkvetdesc3' style='width:91%;height:42px'></textarea><br />
+                    <div style='width:50%;display:inline-block;'>
+                        <h4>Dangerous Friends</h4>
+                        <div style='display:inline-block;width:18px;'>^</div>v<br />
+                        <input type='checkbox' name='attr_teldaally' />
+                        <input type='checkbox' name='attr_teldaenemy' /> Telda, a beggar<br />
+                        <input type='checkbox' name='attr_darmotally' />
+                        <input type='checkbox' name='attr_darmotenemy' /> Darmot, a bluecoat<br />
+                        <input type='checkbox' name='attr_frakeally' />
+                        <input type='checkbox' name='attr_frakeenemy' /> Frake, a locksmith<br />
+                        <input type='checkbox' name='attr_roslynally' />
+                        <input type='checkbox' name='attr_roslynenemy' /> Roslyn Kellis, a nobel<br />
+                        <input type='checkbox' name='attr_petraally' />
+                        <input type='checkbox' name='attr_petraenemy' /> Petra, a city clerk<br /><br /><br />
+                    </div>
+                    <div style='width:50%;display:inline;float:right'>
+                        <h4>Items</h4> <i>(Italics don't count for load)</i><br />
+                        <input type='checkbox' name='attr_finelockpick' /> <b><i>Fine lockpicks</i></b><br />
+                        <input type='checkbox' name='attr_fineshadowcloak' /> <b>Fine shadowcloak</b><br />
+                        <input type='checkbox' name='attr_lightclimbgear' /> Light climbing gear<br />
+                        <input type='checkbox' name='attr_silencepotion' /> <i>Silence potion vial</i><br />
+                        <input type='checkbox' name='attr_darksight' /> Dark-sight mask<br />
+                        <input type='checkbox' name='attr_lurkspiritbane' /> <i>Spiritbane charm</i><br />
+                    </div><br />
+                    <b>Mark XP:</b>
+                    <input type='checkbox' name='attr_lurkadvance1' />
+                    <input type='checkbox' name='attr_lurkadvance2' />
+                    <input type='checkbox' name='attr_lurkadvance3' />
+                    <input type='checkbox' name='attr_lurkadvance4' />
+                    <input type='checkbox' name='attr_lurkadvance5' />
+                    <input type='checkbox' name='attr_lurkadvance6' />
+                    <input type='checkbox' name='attr_lurkadvance7' />
+                    <input type='checkbox' name='attr_lurkadvance8' /><br />
+                    <ul>
+                        <li><i>When you roll a desperate action.</i></li>
+                        <li><i>When you address a tough challenge with infiltration or athletics.</i></li>
+                        <li><i>At end of session, if you've expressed your beliefs,
+                        drives, heritage, or background. And also mark xp if you struggled with issues from your vice or traumas during the session.</i></li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <input type='radio' name='attr_playbook' id='tab-slide' value='slide' />
+                <label for='tab-slide'>Slide</label>
+                <div class='tab-content'>
+                    A subtle manipulator and spy
+                    <h4>Special Abilities</h4>
+                    <input type='checkbox' name='attr_rooksgambit'><b>The Rook's
+                    Gambit':</b>Take <b>2 stress</b> to roll your best action rating
+                    while performing a different action. Say how you adapt your
+                    skill to this use.</input><br />
+                    <input type='checkbox' name='attr_mesmirism'><b>Mesmirism:</b>
+                    When you <b>sway</b> someone, you may cause them to forget that
+                    it's happened until they next interact with you.</input><br />
+                    <input type='checkbox' name='attr_cloakdagger'><b>Cloak & Dagger:</b>
+                    When you use a disguise or other form of covert misdirection
+                    you get <b>+1 effect</b>. When you throw off your disguise,
+                    the resulting surprise gives you the initiative in the situation.</input><br />
+                    <input type='checkbox' name='attr_littlesomething'><b>A Little
+                    Something on the Side:</b>At the end of each downtime phase,
+                    you earn <b>+2 stash</b>.</input><br />
+                    <input type='checkbox' name='attr_likemirror'><b>Like Looking
+                    into a Mirror:</b>You can always tell when someone is lying
+                    to you.</input><br />
+                    <input type='checkbox' name='attr_trustinme'><b>Trust in Me:</b>
+                    You get <b>+1d</b> vs. a target you have a relationship with.</input><br />
+                    <input type='checkbox' name='attr_ghostvoice'><b>Ghost Voice:</b>
+                    You know the secret method to interact with a ghost or demon
+                    as if it was a normal human, regardless of how wild or feral
+                    it appears. You gain <b>potency</b> when communicating with
+                    the supernatural.</input><br />
+                    <input type='checkbox' name='attr_subterfuge'><b>Subterfuge:</b>
+                    You get <b>special armor</b> vs. persuasion and suspicion. When
+                    you roll a <b>critical</b> while using subterfuge, <b>clear
+                    1 stress</b>.</input><br />
+                    <input type='checkbox' name='attr_slidevet1'><b>Veteran:</b>
+                    Choose a special ability from another source.</input><br />
+                    <textarea name='attr_slidevetdesc1' style='width:95%;height:42px'></textarea><br />
+                    <input type='checkbox' name='attr_slidevet2'>
+                    <textarea name='attr_slidevetdesc2' style='width:91%;height:42px'></textarea><br />
+                    <input type='checkbox' name='attr_slidevet3'>
+                    <textarea name='attr_slidevetdesc3' style='width:91%;height:42px'></textarea><br />
+                    <div style='width:50%;display:inline-block;'>
+                        <h4>Dangerous Friends</h4>
+                        <div style='display:inline-block;width:18px;'>^</div>v<br />
+                        <input type='checkbox' name='attr_brylally' />
+                        <input type='checkbox' name='attr_brylenemy' /> Bryl, a drug dealer<br />
+                        <input type='checkbox' name='attr_bazsoally' />
+                        <input type='checkbox' name='attr_bazsoenemy' /> Bazso Baz, a gang leader<br />
+                        <input type='checkbox' name='attr_klyraally' />
+                        <input type='checkbox' name='attr_klyraenemy' /> Klyra, a tavern owner<br />
+                        <input type='checkbox' name='attr_nyryxally' />
+                        <input type='checkbox' name='attr_nyryxenemy' /> Nyryx, a prostitute<br />
+                        <input type='checkbox' name='attr_harkerally' />
+                        <input type='checkbox' name='attr_harkerenemy' /> Harker, a jail-bird<br /><br /><br />
+                    </div>
+                    <div style='width:50%;display:inline;float:right'>
+                        <h4>Items</h4> <i>(Italics don't count for load)</i><br />
+                        <input type='checkbox' name='attr_fineclothes' /> <i><b>Fine clothes & jewlery</b></i><br />
+                        <input type='checkbox' name='attr_finedisguise' /> <b>Fine disguise kit</b><br />
+                        <input type='checkbox' name='attr_finedice' /> <b><i>Fine loaded dice, trick cards</i></b><br />
+                        <input type='checkbox' name='attr_trancepowder' /> <i>Trance Powder</i><br />
+                        <input type='checkbox' name='attr_canesword' /> A cane-sword<br />
+                        <input type='checkbox' name='attr_slidespiritbane' /> <i>Spiritbane charm</i><br />
+                    </div><br />
+                    <b>Mark XP:</b>
+                    <input type='checkbox' name='attr_slideadvance1' />
+                    <input type='checkbox' name='attr_slideadvance2' />
+                    <input type='checkbox' name='attr_slideadvance3' />
+                    <input type='checkbox' name='attr_slideadvance4' />
+                    <input type='checkbox' name='attr_slideadvance5' />
+                    <input type='checkbox' name='attr_slideadvance6' />
+                    <input type='checkbox' name='attr_slideadvance7' />
+                    <input type='checkbox' name='attr_slideadvance8' /><br />
+                    <ul>
+                        <li><i>When you roll a desperate action.</i></li>
+                        <li><i>When you address a tough challenge with deception
+                        or influence.</i></li>
+                        <li><i>At end of session, if you've expressed your beliefs,
+                        drives, heritage, or background. And also mark xp if you
+                        struggled with issues from your vice or traumas during the
+                        session.</i></li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <input type='radio' name='attr_playbook' id='tab-spider' value='spider' />
+                <label for='tab-spider'>Spider</label>
+                <div class='tab-content'>
+                    A devious mastermind
+                    <h4>Special Abilities</h4>
+                    <input type='checkbox' name='attr_weavingtheweb'><b>Weaving
+                    the Web:</b>You gain <b>+1d</b> to the <b>engagement roll</b>
+                    if you’ve gathered info on the target or location.</input><br />
+                    <input type='checkbox' name='attr_firesight'><b>Foresight:</b>
+                    When you start a progress clock for any type of <b>long term
+                    project</b> start with 2 segments filled in.</input><br />
+                    <input type='checkbox' name='attr_functioningvice'><b>Functioning
+                    Vice:</b>When you indulge your <b>vice</b>, you may adjust the
+                    outcome by +/-1. An ally who joins in your vice may do the same.</input><br />
+                    <input type='checkbox' name='attr_calculating'><b>Calculating:</b>
+                    Due to your careful planning, during <b>downtime</b>, you may
+                    give yourself or another crew member +1 downtime action.</input><br />
+                    <input type='checkbox' name='attr_ghostcontract'><b>Ghost Contract:</b>
+                    When you shake on a deal, you and your partner—human or otherwise—both
+                    bear a mark of your oath. If either breaks the contract, they
+                    take level 3 harm (<i>Cursed</i>).</input><br />
+                    <input type='checkbox' name='attr_connected'><b>Connected:</b>
+                    During <b>downtime</b>, you get <b>+1 result level</b> when
+                    you make <b>acquire asset</b>, <b>gather info</b>, or <b>reduce
+                    heat</b> rolls.</input><br />
+                    <input type='checkbox' name='attr_jailbird'><b>Jail Bird:</b>
+                    When <b>incarcerated</b>, your wanted level counts as 1 less,
+                    your Tier as 1 more, and you gain +1 faction status in addition
+                    to your roll.</input><br />
+                    <input type='checkbox' name='attr_mastermind'><b>Mastermind:</b>
+                    You get <b>special armor</b> when protecting a teammate. <i>How
+                    did you plan for this?</i> If a <b>crit</b> is rolled when you
+                    command a gang or lead a group action, <b>clear 1 stress</b>.</input><br />
+                    <input type='checkbox' name='attr_spidervet1'><b>Veteran:</b>
+                    Choose a special ability from another source.</input><br />
+                    <textarea name='attr_spidervetdesc1' style='width:95%;height:42px'></textarea><br />
+                    <input type='checkbox' name='attr_spidervet2'>
+                    <textarea name='attr_spidervetdesc2' style='width:91%;height:42px'></textarea><br />
+                    <input type='checkbox' name='attr_spidervet3'>
+                    <textarea name='attr_spidervetdesc3' style='width:91%;height:42px'></textarea><br />
+                    <div style='width:50%;display:inline-block;'>
+                        <h4>Dangerous Friends</h4>
+                        <div style='display:inline-block;width:18px;'>^</div>v<br />
+                        <input type='checkbox' name='attr_saliaally' />
+                        <input type='checkbox' name='attr_saliaenemy' /> Salia, an information broker<br />
+                        <input type='checkbox' name='attr_augusally' />
+                        <input type='checkbox' name='attr_augusenemy' /> Augus, a master architect<br />
+                        <input type='checkbox' name='attr_jennahally' />
+                        <input type='checkbox' name='attr_jennahenemy' /> Jennah, a servant<br />
+                        <input type='checkbox' name='attr_rivenally' />
+                        <input type='checkbox' name='attr_rivenenemy' /> Riven, a chemist<br />
+                        <input type='checkbox' name='attr_jerenally' />
+                        <input type='checkbox' name='attr_jerenenemy' /> Jeren, a bluecoat archivist<br /><br /><br />
+                    </div>
+                    <div style='width:50%;display:inline;float:right'>
+                        <h4>Items</h4> <i>(Italics don't count for load)</i><br />
+                        <input type='checkbox' name='attr_finecover' /> <b><i>Fine cover identity</i></b><br />
+                        <input type='checkbox' name='attr_finewhiskey' /> <b>Fine bottle of whiskey</b><br />
+                        <input type='checkbox' name='attr_blueprints' /> Blueprints<br />
+                        <input type='checkbox' name='attr_slumber' /> <i>Vial of slumber essence</i><br />
+                        <input type='checkbox' name='attr_palmpistol' /> <i>Concealed palm pistol</i><br />
+                        <input type='checkbox' name='attr_spiderspiritbane' /> <i>Spiritbane charm</i><br />
+                    </div><br />
+                    <b>Mark XP:</b>
+                    <input type='checkbox' name='attr_spideradvance1' />
+                    <input type='checkbox' name='attr_spideradvance2' />
+                    <input type='checkbox' name='attr_spideradvance3' />
+                    <input type='checkbox' name='attr_spideradvance4' />
+                    <input type='checkbox' name='attr_spideradvance5' />
+                    <input type='checkbox' name='attr_spideradvance6' />
+                    <input type='checkbox' name='attr_spideradvance7' />
+                    <input type='checkbox' name='attr_spideradvance8' /><br />
+                    <ul>
+                        <li><i>When you roll a desperate action.</i></li>
+                        <li><i>When you address a tough challenge with planning or calculation.</i></li>
+                        <li><i>At end of session, if you've expressed your beliefs,
+                        drives, heritage, or background. And also mark xp if you struggled with issues from your vice or traumas during the session.</i></li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <input type='radio' name='attr_playbook' id='tab-whisper' value='whisper' />
+                <label for='tab-whisper'>Whisper</label>
+                <div class='tab-content'>
+                    An arcane adept and channeler
+                    <h4>Special Abilities</h4>
+                    <input type='checkbox' name='attr_compel'><b>Compel:</b> You
+                    can <b>attune</b> to the ghost field to force a nearby spirit
+                    to appear before you and obey a command you give it.</input><br />
+                    <input type='checkbox' name='attr_tempest'><b>Tempest:</b> Channel
+                    energy to produce storm effects (fog, frost, wind, rain, lightning).
+                    Costs <b>stress</b> equal to the magnitude of the results (0-6).</input><br />
+                    <input type='checkbox' name='attr_occultist'><b>Occultist:</b>
+                    You may <b>consort</b> with ancient powers, forgotten gods or
+                    demons. If you have control over the entity, take <b>+1d</b>.</input><br />
+                    <input type='checkbox' name='attr_ritual'><b>Ritual:</b> You
+                    can <b>study</b> an occult ritual to summon a supernatural effect
+                    or being. Costs stress based on the magnitude of the results
+                    (3, 6, or 9). <i>Answer the GM's questions to create the ritual</i>
+                    (page 53).</input><br />
+                    <input type='checkbox' name='attr_ironwill'><b>Iron Will:</b>
+                    When you roll resistance with <b>Resolve</b>, you get <b>+1d</b>.</input><br />
+                    <input type='checkbox' name='attr_strangemethods'><b>Strange
+                    Methods:</b> When you <b>tinker</b> with a device, tool, or
+                    weapon, you may include electroplasmic or arcane features.</input><br />
+                    <input type='checkbox' name='attr_ghostmind'><b>Ghost
+                    Mind:</b> You know how to find the weakness in each ghost, demon,
+                    or arcane force. You gain <b>potency</b> when you <b>study</b>
+                    the supernatural.</input><br />
+                    <input type='checkbox' name='attr_warded'><b>Warded:</b> You
+                    get <b>special armor</b> vs. supernatural effects. When you
+                    roll a <b>critical</b> while dealing with arcane powers,
+                    <b>clear 1 stress</b>.</input><br />
+                    <input type='checkbox' name='attr_whispervet1'><b>Veteran:</b>
+                    Choose a special ability from another source.</input><br />
+                    <textarea name='attr_whispervetdesc1' style='width:95%;height:42px'></textarea><br />
+                    <input type='checkbox' name='attr_whispervet2'>
+                    <textarea name='attr_whispervetdesc2' style='width:91%;height:42px'></textarea><br />
+                    <input type='checkbox' name='attr_whispervet3'>
+                    <textarea name='attr_whispervetdesc3' style='width:91%;height:42px'></textarea><br />
+                    <div style='width:50%;display:inline-block;'>
+                        <h4>Dangerous Friends</h4>
+                        <div style='display:inline-block;width:18px;'>^</div>v<br />
+                        <input type='checkbox' name='attr_nyryxally' />
+                        <input type='checkbox' name='attr_nyryxenemy' /> Nyryx, a possessor ghost<br />
+                        <input type='checkbox' name='attr_scurlockally' />
+                        <input type='checkbox' name='attr_scurlockenemy' /> Scurlock, a vampire<br />
+                        <input type='checkbox' name='attr_setarraally' />
+                        <input type='checkbox' name='attr_setarraenemy' /> Setarra, a demon<br />
+                        <input type='checkbox' name='attr_quellynally' />
+                        <input type='checkbox' name='attr_quellynenemy' /> Quellyn, a witch<br />
+                        <input type='checkbox' name='attr_flintally' />
+                        <input type='checkbox' name='attr_flintenemy' /> Flint, a spirit trafficker<br /><br /><br />
+                    </div>
+                    <div style='width:50%;display:inline;float:right'>
+                        <h4>Items</h4> <i>(Italics don't count for load)</i><br />
+                        <input type='checkbox' name='attr_finelightning1' />-<input type='checkbox' name='attr_finelightning2' />
+                        <b>Fine lightning hook</b><br />
+                        <input type='checkbox' name='attr_finespiritmask' /> <b><i>Fine spirit mask</i></b><br />
+                        <input type='checkbox' name='attr_ectoplasmvials' /> <i>Ectoplasm vials</i><br />
+                        <input type='checkbox' name='attr_spiritbottles' /> Spirit bottles (2)<br />
+                        <input type='checkbox' name='attr_ghostkey' /> <i>Ghost key</i><br />
+                        <input type='checkbox' name='attr_demonbane' /> <i>Demonbane charm</i><br />
+                    </div><br />
+                    <b>Mark XP:</b>
+                    <input type='checkbox' name='attr_whisperadvance1' />
+                    <input type='checkbox' name='attr_whisperadvance2' />
+                    <input type='checkbox' name='attr_whisperadvance3' />
+                    <input type='checkbox' name='attr_whisperadvance4' />
+                    <input type='checkbox' name='attr_whisperadvance5' />
+                    <input type='checkbox' name='attr_whisperadvance6' />
+                    <input type='checkbox' name='attr_whisperadvance7' />
+                    <input type='checkbox' name='attr_whisperadvance8' /><br />
+                    <ul>
+                        <li><i>When you roll a desperate action.</i></li>
+                        <li><i>When you address a tough challenge with arcane power or knowledge.</i></li>
+                        <li><i>At end of session, if you've expressed your beliefs,
+                        drives, heritage, or background. And also mark xp if you struggled with issues from your vice or traumas during the session.</i></li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <input type='radio' name='attr_playbook' id='tab-custom' value='custom' />
+                <label for='tab-custom'>Custom</label>
+                <div class='tab-content'>
+                    Playbook Name: <input type='text' name='attr_customname' />
+                    <h4>Special Abilities</h4>
+                    <input type='checkbox' name='attr_customabil1' />
+                    <input type='text' name='attr_customabilname1' /><b>:</b><br />
+                    <textarea name='attr_customabildesc1' style='width:95%;height:42px'></textarea><br />
+                    <input type='checkbox' name='attr_customabil2' />
+                    <input type='text' name='attr_customabilname2' /><b>:</b><br />
+                    <textarea name='attr_customabildesc2' style='width:95%;height:42px'></textarea><br />
+                    <input type='checkbox' name='attr_customabil3' />
+                    <input type='text' name='attr_customabilname3' /><b>:</b><br />
+                    <textarea name='attr_customabildesc3' style='width:95%;height:42px'></textarea><br />
+                    <input type='checkbox' name='attr_customabil4' />
+                    <input type='text' name='attr_customabilname4' /><b>:</b><br />
+                    <textarea name='attr_customabildesc4' style='width:95%;height:42px'></textarea><br />
+                    <input type='checkbox' name='attr_customabil5' />
+                    <input type='text' name='attr_customabilname5' /><b>:</b><br />
+                    <textarea name='attr_customabildesc5' style='width:95%;height:42px'></textarea><br />
+                    <input type='checkbox' name='attr_customabil6' />
+                    <input type='text' name='attr_customabilname6' /><b>:</b><br />
+                    <textarea name='attr_customabildesc6' style='width:95%;height:42px'></textarea><br />
+                    <input type='checkbox' name='attr_customabil7' />
+                    <input type='text' name='attr_customabilname7' /><b>:</b><br />
+                    <textarea name='attr_customabildesc7' style='width:95%;height:42px'></textarea><br />
+                    <input type='checkbox' name='attr_customabil8' />
+                    <input type='text' name='attr_customabilname8' /><b>:</b><br />
+                    <textarea name='attr_customabildesc8' style='width:95%;height:42px'></textarea><br />
+                    <input type='checkbox' name='attr_customvet1'><b>Veteran:</b>
+                    Choose a special ability from another source.</input><br />
+                    <textarea name='attr_customvetdesc1' style='width:95%;height:42px'></textarea><br />
+                    <input type='checkbox' name='attr_customvet2'>
+                    <textarea name='attr_customvetdesc2' style='width:91%;height:42px'></textarea><br />
+                    <input type='checkbox' name='attr_customvet3'>
+                    <textarea name='attr_customvetdesc3' style='width:91%;height:42px'></textarea><br />
+                    <div style='width:50%;display:inline-block;'>
+                        <h4>Dangerous Friends</h4>
+                        <div style='display:inline-block;width:18px;'>^</div>v<br />
+                        <input type='checkbox' name='attr_customally1' />
+                        <input type='checkbox' name='attr_customenemy1' />
+                        <input type='text' name='attr_customnpcname1' style='width:125px' /><br />
+                        <input type='checkbox' name='attr_customally2' />
+                        <input type='checkbox' name='attr_customenemy2' />
+                        <input type='text' name='attr_customnpcname2' style='width:125px' /><br />
+                        <input type='checkbox' name='attr_customally3' />
+                        <input type='checkbox' name='attr_customenemy3' />
+                        <input type='text' name='attr_customnpcname3' style='width:125px' /><br />
+                        <input type='checkbox' name='attr_customally4' />
+                        <input type='checkbox' name='attr_customenemy4' />
+                        <input type='text' name='attr_customnpcname4' style='width:125px' /><br />
+                        <input type='checkbox' name='attr_customally5' />
+                        <input type='checkbox' name='attr_customenemy5' />
+                        <input type='text' name='attr_customnpcname5' style='width:125px' /><br /><br /><br />
+                    </div>
+                    <div style='width:50%;display:inline;float:right'>
+                        <h4>Items</h4> <i>(Italics don't count for load)</i><br />
+                        <input type='checkbox' name='attr_customgear11' />
+                        <input type='checkbox' name='attr_customgear12' />
+                        <input type='text' name='attr_customgearname1' style='width:130px' /><br />
+                        <input type='checkbox' name='attr_customgear21' />
+                        <input type='checkbox' name='attr_customgear22' />
+                        <input type='text' name='attr_customgearname2' style='width:130px' /><br />
+                        <input type='checkbox' name='attr_customgear31' />
+                        <input type='checkbox' name='attr_customgear32' />
+                        <input type='text' name='attr_customgearname3' style='width:130px' /><br />
+                        <input type='checkbox' name='attr_customgear41' />
+                        <input type='checkbox' name='attr_customgear42' />
+                        <input type='text' name='attr_customgearname4' style='width:130px' /><br />
+                        <input type='checkbox' name='attr_customgear51' />
+                        <input type='checkbox' name='attr_customgear52' />
+                        <input type='text' name='attr_customgearname5' style='width:130px' /><br />
+                        <input type='checkbox' name='attr_customgear61' />
+                        <input type='checkbox' name='attr_customgear62' />
+                        <input type='text' name='attr_customgearname6' style='width:130px' /><br />
+                    </div><br />
+                    <b>Mark XP:</b>
+                    <input type='checkbox' name='attr_customadvance1' />
+                    <input type='checkbox' name='attr_customadvance2' />
+                    <input type='checkbox' name='attr_customadvance3' />
+                    <input type='checkbox' name='attr_customadvance4' />
+                    <input type='checkbox' name='attr_customadvance5' />
+                    <input type='checkbox' name='attr_customadvance6' />
+                    <input type='checkbox' name='attr_customadvance7' />
+                    <input type='checkbox' name='attr_customadvance8' /><br />
+                    <ul>
+                        <li><i>When you roll a desperate action.</i></li>
+                        <li><i><input type='text' name='attr_customxp' style='width:310px' /></i></li>
+                        <li><i>At end of session, if you've expressed your beliefs,
+                        drives, heritage, or background. And also mark xp if you struggled with issues from your vice or traumas during the session.</i></li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class='rightcol'>
+        <b>Insight</b>
+        <input type='checkbox' name='attr_insight1' />
+        <input type='checkbox' name='attr_insight2' />
+        <input type='checkbox' name='attr_insight3' />
+        <input type='checkbox' name='attr_insight4' />
+        <input type='checkbox' name='attr_insight5' />
+        <input type='checkbox' name='attr_insight6' />
+        <button type='roll' name='roll_insight' title='Defend with Insight' value='!defense|@{character_name}|@{character_id}|Insight|@{hunt}|@{study}|@{survey}|@{tinker}|?{modifiers|0}'></button><br />
+        <label style='display:inline' for='hunt0'> </label>
+        <input type='radio' name='attr_hunt' id='hunt0' value=0 style='display:none' checked />
+        <input type='radio' name='attr_hunt' value=1 />|
+        <input type='radio' name='attr_hunt' value=2 />
+        <input type='radio' name='attr_hunt' value=3 />
+        <input type='radio' name='attr_hunt' value=4 />
+        Hunt <button type='roll' name='roll_hunt' title='Make a Hunt Action Roll' value='!roll|@{character_name}|@{character_id}|Hunt|[[@{hunt}+?{modifiers|0}]]'></button><br />
+        <label style='display:inline' for='study0'> </label>
+        <input type='radio' name='attr_study' id='study0' value=0 style='display:none' checked />
+        <input type='radio' name='attr_study' value=1 />|
+        <input type='radio' name='attr_study' value=2 />
+        <input type='radio' name='attr_study' value=3 />
+        <input type='radio' name='attr_study' value=4 />
+        Study <button type='roll' name='roll_study' title='Make a Study Action Roll' value='!roll|@{character_name}|@{character_id}|Study|[[@{study}+?{modifiers|0}]]'></button><br />
+        <label style='display:inline' for='survey0'> </label>
+        <input type='radio' name='attr_survey' id='survey0' value=0 style='display:none' checked />
+        <input type='radio' name='attr_survey' value=1 />|
+        <input type='radio' name='attr_survey' value=2 />
+        <input type='radio' name='attr_survey' value=3 />
+        <input type='radio' name='attr_survey' value=4 />
+        Survey <button type='roll' name='roll_survey' title='Make a Survey Action Roll' value='!roll|@{character_name}|@{character_id}|Survey|[[@{survey}+?{modifiers|0}]]'></button><br />
+        <label style='display:inline' for='tinker0'> </label>
+        <input type='radio' name='attr_tinker' id='tinker0' value=0 style='display:none' checked />
+        <input type='radio' name='attr_tinker' value=1 />|
+        <input type='radio' name='attr_tinker' value=2 />
+        <input type='radio' name='attr_tinker' value=3 />
+        <input type='radio' name='attr_tinker' value=4 />
+        Tinker <button type='roll' name='roll_tinker' title='Make a Tinker Action Roll' value='!roll|@{character_name}|@{character_id}|Tinker|[[@{tinker}+?{modifiers|0}]]'></button><br />
+        <b>Prowess</b>
+        <input type='checkbox' name='attr_prowess1' />
+        <input type='checkbox' name='attr_prowess2' />
+        <input type='checkbox' name='attr_prowess3' />
+        <input type='checkbox' name='attr_prowess4' />
+        <input type='checkbox' name='attr_prowess5' />
+        <input type='checkbox' name='attr_prowess6' />
+        <button type='roll' name='roll_prowess' title='Defend with Prowess' value='!defense|@{character_name}|@{character_id}|Prowess|@{finesse}|@{prowl}|@{skirmish}|@{wreck}|?{modifiers|0}'></button><br />
+        <label style='display:inline' for='finesse0'> </label>
+        <input type='radio' name='attr_finesse' id='finesse0' value=0 style='display:none' checked />
+        <input type='radio' name='attr_finesse' value=1 />|
+        <input type='radio' name='attr_finesse' value=2 />
+        <input type='radio' name='attr_finesse' value=3 />
+        <input type='radio' name='attr_finesse' value=4 />
+        Finesse <button type='roll' name='roll_finesse' title='Make a Finesse Action Roll' value='!roll|@{character_name}|@{character_id}|Finesse|[[@{finesse}+?{modifiers|0}]]'></button><br />
+        <label style='display:inline' for='prowl0'> </label>
+        <input type='radio' name='attr_prowl' id='prowl0' value=0 style='display:none' checked />
+        <input type='radio' name='attr_prowl' value=1 />|
+        <input type='radio' name='attr_prowl' value=2 />
+        <input type='radio' name='attr_prowl' value=3 />
+        <input type='radio' name='attr_prowl' value=4 />
+        Prowl <button type='roll' name='roll_prowl' title='Make a Prowl Action Roll' value='!roll|@{character_name}|@{character_id}|Prowl|[[@{prowl}+?{modifiers|0}]]'></button><br />
+        <label style='display:inline' for='skirmish0'> </label>
+        <input type='radio' name='attr_skirmish' id='skirmish0' value=0 style='display:none' checked />
+        <input type='radio' name='attr_skirmish' value=1 />|
+        <input type='radio' name='attr_skirmish' value=2 />
+        <input type='radio' name='attr_skirmish' value=3 />
+        <input type='radio' name='attr_skirmish' value=4 />
+        Skirmish <button type='roll' name='roll_skirmish' title='Make a Skirmish Action Roll' value='!roll|@{character_name}|@{character_id}|Skirmish|[[@{skirmish}+?{modifiers|0}]]'></button><br />
+        <label style='display:inline' for='wreck0'> </label>
+        <input type='radio' name='attr_wreck' id='wreck0' value=0 style='display:none' checked />
+        <input type='radio' name='attr_wreck' value=1 />|
+        <input type='radio' name='attr_wreck' value=2 />
+        <input type='radio' name='attr_wreck' value=3 />
+        <input type='radio' name='attr_wreck' value=4 />
+        Wreck <button type='roll' name='roll_wreck' title='Make a Wreck Action Roll' value='!roll|@{character_name}|@{character_id}|Wreck|[[@{wreck}+?{modifiers|0}]]'></button><br />
+        <b>Resolve</b>
+        <input type='checkbox' name='attr_resolve1' />
+        <input type='checkbox' name='attr_resolve2' />
+        <input type='checkbox' name='attr_resolve3' />
+        <input type='checkbox' name='attr_resolve4' />
+        <input type='checkbox' name='attr_resolve5' />
+        <input type='checkbox' name='attr_resolve6' />
+        <button type='roll' name='roll_resolve' title='Defend with resolve' value='!defense|@{character_name}|@{character_id}|Resolve|@{attune}|@{command}|@{consort}|@{sway}|?{modifiers|0}'></button><br />
+        <label style='display:inline' for='attune0'> </label>
+        <input type='radio' name='attr_attune' id='attune0' value=0 style='display:none' checked />
+        <input type='radio' name='attr_attune' value=1 />|
+        <input type='radio' name='attr_attune' value=2 />
+        <input type='radio' name='attr_attune' value=3 />
+        <input type='radio' name='attr_attune' value=4 />
+        Attune <button type='roll' name='roll_attune' title='Make a Attune Action Roll' value='!roll|@{character_name}|@{character_id}|Attune|[[@{attune}+?{modifiers|0}]]'></button><br />
+        <label style='display:inline' for='command0'> </label>
+        <input type='radio' name='attr_command' id='command0' value=0 style='display:none' checked />
+        <input type='radio' name='attr_command' value=1 />|
+        <input type='radio' name='attr_command' value=2 />
+        <input type='radio' name='attr_command' value=3 />
+        <input type='radio' name='attr_command' value=4 />
+        Command <button type='roll' name='roll_command' title='Make a Command Action Roll' value='!roll|@{character_name}|@{character_id}|Command|[[@{command}+?{modifiers|0}]]'></button><br />
+        <label style='display:inline' for='consort0'> </label>
+        <input type='radio' name='attr_consort' id='consort0' value=0 style='display:none' checked />
+        <input type='radio' name='attr_consort' value=1 />|
+        <input type='radio' name='attr_consort' value=2 />
+        <input type='radio' name='attr_consort' value=3 />
+        <input type='radio' name='attr_consort' value=4 />
+        Consort <button type='roll' name='roll_consort' title='Make a Consort Action Roll' value='!roll|@{character_name}|@{character_id}|Consort|[[@{consort}+?{modifiers|0}]]'></button><br />
+        <label style='display:inline' for='sway0'> </label>
+        <input type='radio' name='attr_sway' id='sway0' value=0 style='display:none' checked />
+        <input type='radio' name='attr_sway' value=1 />|
+        <input type='radio' name='attr_sway' value=2 />
+        <input type='radio' name='attr_sway' value=3 />
+        <input type='radio' name='attr_sway' value=4 />
+        Sway <button type='roll' name='roll_sway' title='Make a Sway Action Roll' value='!roll|@{character_name}|@{character_id}|Sway|[[@{sway}+?{modifiers|0}]]'></button><br /><br />
+        <h4>Bonus Die</h4>
+        <div style='background-color:#000;color:#fff;display:inline-block;float:left;height:52px;'>
+            <br />
+            +<br />
+        </div>
+        <div style='display:inline-block;float:left;height:52px;'>
+            <b>Push yourself</b> (take<br />2 stress) -OR- accept a<br /><b>Devil's Bargain</b>
+        </div><br /><div style='clear:both'></div><br />
+        <b>load:</b><br />
+        <input type='radio' name='attr_load' value=3> 3 light</input>
+        <input type='radio' name='attr_load' value=5> 5 normal</input>
+        <input type='radio' name='attr_load' value=6> 6 heavy</input><br /><br />
+        <input type='checkbox' name='attr_blade'>A Blade or Two<br />
+        <input type='checkbox' name='attr_throwing'>Throwing Knives<br />
+        <input type='checkbox' name='attr_pistol'>A Pistol
+        <input type='checkbox' name='attr_2pistol'>A 2nd Pistol<br />
+        <input type='checkbox' name='attr_large1'>-<input type='checkbox' name='attr_large2'>A Large Weapon<br />
+        <input type='checkbox' name='attr_unusualweap'>An Unusual Weapon<br />
+        <input type='checkbox' name='attr_havearmor'>Armor
+        <input type='checkbox' name='attr_haveheavy'>+Heavy<br />
+        <input type='checkbox' name='attr_burgtool'>Burglary Tools<br />
+        <input type='checkbox' name='attr_climb1'>-<input type='checkbox' name='attr_climb2'>Climbing Gear<br />
+        <input type='checkbox' name='attr_arcaneimp'>Arcane Implements<br />
+        <input type='checkbox' name='attr_documents'>Documents<br />
+        <input type='checkbox' name='attr_subterfuge'>Subterfuge Supplies<br />
+        <input type='checkbox' name='attr_tinkering'>Tinkering Tools<br />
+        <input type='checkbox' name='attr_customitem1'>
+        <input type='checkbox' name='attr_customitem2'>
+        <input type='text' name='attr_customitemname' style='width:150px' />
+    </div>
+    <div class='bot'>
+        <div style='width:28%;display:inline-block;float:left;'>
+            <h4>Teamwork</h4>
+            <b>Assist</b> another character.<br />
+            Lead a <b>group action</b>.<br />
+            <b>Protect</b> a teamate.<br />
+            <b>Set up</b> another character.
+        </div>
+        <div style='width:38%;display:inline-block;float:left;'>
+            <h4>Planning & Load</h4>
+            Choose a plan, provide the <b><i>detail</i></b>.<br />
+            Choose your <b><i>load</i></b> for the operation.
+            <ul>
+                <li><b>Assault plan:</b> <i>Point of attack.</i></li>
+                <li><b>Deception plan:</b> <i>Method.</i></li>
+                <li><b>Infiltration plan:</b> <i>Entry point.</i></li>
+                <li><b>Occult plan:</b> <i>Arcane power.</i></li>
+                <li><b>Social plan:</b> <i>Social connection.</i></li>
+                <li><b>Transport plan:</b> <i>Locations / Route.</i></li>
+            </ul>
+        </div>
+        <div style='width:34%;display:inline-block;float:left;'>
+            <h4>Gather Information</h4>
+            <ul>
+                <li><i>What do they intend to do?</i></li>
+                <li><i>How can I get them to [X]?</i></li>
+                <li><i>What are they really feeling?</i></li>
+                <li><i>What should I be worried about?</i></li>
+                <li><i>Where's the weakness here?</i></li>
+                <li><i>How can I find [X]?</i></li>
+                <li><i>What's really going on here?</i></li>
+                <li><i>Ask about a detail for a plan.</i></li>
+            </ul>
+        </div>
+    </div>
+</div>
